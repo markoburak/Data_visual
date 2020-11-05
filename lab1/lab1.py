@@ -4,7 +4,7 @@ import seaborn as sns
 df = pd.read_csv('flats.csv',decimal=",")
 
 
-
+print(df)
 # кількість квартир за кімнатами
 sums = df.groupby('Кімнат').size().reset_index(name='Кількість')
 sums.set_index('Кімнат', inplace=True)
